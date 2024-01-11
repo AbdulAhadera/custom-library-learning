@@ -40,6 +40,7 @@ const MyRichTextEditor = () => {
     //   <p>---? coming form local storage{localStorage.getItem("richTextContent")}</p>
     // </div>
     <>
+    asd
     </>
   );
 };
