@@ -2,8 +2,15 @@ import React, { useState, useEffect } from 'react';
 import ReactQuill from 'react-quill';
 import DOMPurify from 'dompurify';
 import 'react-quill/dist/quill.snow.css';
+import  Auth  from './components/Auth';
+import Login from './components/Login';
+import SendData from './components/sendData';
+import { AuthProvider } from './AuthContext';
+
 
 const MyRichTextEditor = () => {
+
+
   // const [content, setContent] = useState('');
   // const [displayedContent, setDisplayedContent] = useState('');
 
@@ -40,7 +47,12 @@ const MyRichTextEditor = () => {
     //   <p>---? coming form local storage{localStorage.getItem("richTextContent")}</p>
     // </div>
     <>
-    asd
+    <AuthProvider>
+  
+      <Auth />
+      <Login />
+      <SendData />
+    </AuthProvider>
     </>
   );
 };
